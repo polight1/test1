@@ -1,0 +1,25 @@
+<body class="bg" style="background: linear-gradient(rgb(33, 116, 47), rgb(0, 0, 0)) center center / cover no-repeat fixed; height: 100%;"><br>
+
+  <div id="particles-js"><canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;" width="1920" height="497"></canvas></div>
+  <div id="contextMenu" class="context-menu">
+
+
+
+
+
+
+
+  <script>
+    var bgUrl = localStorage.getItem('bgUrl');
+    if (bgUrl === 'none' || bgUrl === null || bgUrl === '') {
+        console.log('No custom background set.');
+    } else {
+        document.body.style.backgroundImage = `url(${bgUrl})`;
+        document.getElementById('particles-js').remove();
+    }
+      </script>
+            <script rel="preload" src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+            <script src="/assets/js/particles.js"></script>
+
+
+</body>
